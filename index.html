@@ -22,11 +22,18 @@
             <img src="img/flappy.png">
             <p>Flappy Bird oyununu kodlamak için editörü aç!</p>
         </div>
+        <div id="runDino" class="card item">
+            <img src="img/dino.png">
+            <p>Dino oyununu kodlamak için editörü aç!</p>
+        </div>
     </div>
 </div>
 <script>
     document.getElementById("runFlappy").addEventListener('click', function () {
-        location.href= './tm/index.html?key=' + document.getElementById("tmin").value;
+        location.href= './tm/flappy/index-en.html?key=' + document.getElementById("tmin").value;
+    });
+    document.getElementById("runDino").addEventListener('click', function () {
+        location.href= './tm/dino/index-en.html?key=' + document.getElementById("tmin").value;
     });
 </script>
 </body>
