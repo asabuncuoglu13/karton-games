@@ -6,54 +6,18 @@ approach to play games to develop algorithmic thinking skills.
  
 
 **Dino Game**
-Here you can find possible scenerios with Dino Game.<br>
+Here you can find possible scenerios to code with Dino Game.<br>
 **Çalışan senaryolar:** <br>
-**1=>**<br>
-Oyun Başlayınca<br>
-Dino’yu Çağır<br>
-Koş Dino<br>
-Ekrana Dokununca<br>
-Zıpla<br>
-Skor<br>
-Kaktüse Çarpınca <br>
-Oyunu Bitir<br>
-Kaktüs Dik<br>
-**2=>**<br>
-Oyun Başlayınca<br>
-Dino’yu Çağır<br>
-Koş Dino<br>
-Ekrana Dokununca<br>
-Zıpla<br>
-Kaktüsü Geçince<br>
-Skor<br>
-Kaktüse Çarpınca <br>
-Oyunu Bitir<br>
-Kaktüs Dik<br>
-**3=>**<br>
-Oyun Başlayınca<br>
-Dino’yu Çağır<br>
-Koş Dino<br>
-Kaktüse Çarpınca <br>
-Zıpla<br>
-**4=>**<br>
-Oyun Başlayınca<br>
-Dino’yu Çağır<br>
-Koş Dino<br>
-Kaktüse Çarpınca <br>
-Zıpla<br>
-Ekrana Dokununca <br>
-Oyunu Bitir<br>
-**5=>**<br>
-Oyun Başlayınca<br>
-Dino’yu Çağır<br>
-Koş Dino<br>
-Kaktüse Çarpınca <br>
-Zıpla<br>
-Kaktüs Dik<br>
-Ekrana Dokununca<br>
-Oyunu Bitir<br>
-Kaktüsü Geçince<br>
-Skor<br>
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+
+Çalışan senaryolar | #1 | #2 | #3 | #4 | #5 
+--- | --- | --- | --- |--- |--- 
+---| Oyun Başlayınca | Oyun Başlayınca | Oyun Başlayınca | Oyun Başlayınca | Oyun Başlayınca
+--- | Dino’yu Çağır | Dino’yu Çağır | Dino’yu Çağır | Dino’yu Çağır | Dino’yu Çağır
+--- | Koş Dino | Koş Dino | Koş Dino | Koş Dino | Koş Dino
+--- | Ekrana Dokununca | Ekrana Dokununca | Kaktüse Çarpınca | Kaktüse Çarpınca | Kaktüse Çarpınca
+--- | Zıpla | Zıpla | Zıpla | Zıpla | Zıpla
+--- | Skor | Kaktüsü Geçince | --- | Ekrana Dokununca | Kaktüs Dik
+--- | Kaktüse Çarpınca | Skor | --- | Oyunu Bitir | Ekrana Dokununca
+--- | Oyunu Bitir | Kaktüse Çarpınca | --- | --- | Oyunu Bitir
+--- | Kaktüs Dik | Oyunu Bitir | --- | --- | Kaktüsü Geçince
+--- | --- | Kaktüs Dik | --- | --- | Skor
