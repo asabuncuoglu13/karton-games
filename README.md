@@ -1,23 +1,18 @@
-# kart-on games
+# Kart-ON Games
 
 **Kart-ON** uses card-based programming blocks to code sketches and animations easily. Kart-ON games uses a similar 
-approach to play games to develop algorithmic thinking skills. 
+approach to play games to develop algorithmic thinking skills:
 
- 
+1. Create tangible representations of pre-defined game functions.
+2. Use Teachable Machine to create a classifier model for these tangible representations.
+3. Embed your Teachable Machine model link to our game interface.
+4. Show your tangible function representations to develop the game.
 
-**Dino Game**
-Here you can find possible scenerios to code with Dino Game.<br>
-**Çalışan senaryolar:** <br>
 
-Çalışan senaryolar | #1 | #2 | #3 | #4 | #5 
---- | --- | --- | --- |--- |--- 
----| Oyun Başlayınca | Oyun Başlayınca | Oyun Başlayınca | Oyun Başlayınca | Oyun Başlayınca
---- | Dino’yu Çağır | Dino’yu Çağır | Dino’yu Çağır | Dino’yu Çağır | Dino’yu Çağır
---- | Koş Dino | Koş Dino | Koş Dino | Koş Dino | Koş Dino
---- | Ekrana Dokununca | Ekrana Dokununca | Kaktüse Çarpınca | Kaktüse Çarpınca | Kaktüse Çarpınca
---- | Zıpla | Zıpla | Zıpla | Zıpla | Zıpla
---- | Skor | Kaktüsü Geçince | --- | Ekrana Dokununca | Kaktüs Dik
---- | Kaktüse Çarpınca | Skor | --- | Oyunu Bitir | Ekrana Dokununca
---- | Oyunu Bitir | Kaktüse Çarpınca | --- | --- | Oyunu Bitir
---- | Kaktüs Dik | Oyunu Bitir | --- | --- | Kaktüsü Geçince
---- | --- | Kaktüs Dik | --- | --- | Skor
+Use this starter slide: [Google Slides - Intro Programming](https://docs.google.com/presentation/d/e/2PACX-1vRJZMeVgRwhr5o0sq701NDOYR0IAgvkiZA1G3OtxemZ9sBFiog-NV3pHtKMDX6uldWccowsghHRu2Lf/pub?start=false&loop=false&delayms=3000)
+
+Then follow this Codelab to use our game interface: [Flappy Bird - Teachable Machine Codelab](./tm/codelab/en/index.html)
+
+
+
+
