@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <meta name="theme-color" content="#4F7DC9">
@@ -13,184 +14,220 @@
         .success {
             color: #1e8e3e;
         }
-
+        
         .error {
             color: red;
         }
     </style>
 </head>
+
 <body>
-<google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
-<google-codelab codelab-gaid=""
-                id="kart-on-game-flappy-bird"
-                title="Kart-ON Game: Flappy Bird"
-                environment="web"
-                feedback-link="">
+    <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+    <google-codelab codelab-gaid="" id="kart-on-game-flappy-bird" title="Kart-ON Game: Flappy Bird" environment="web" feedback-link="">
 
-    <google-codelab-step label="Coding the Game using Teachable Machine" duration="0">
-        <p>In this tutorial, we will learn the basics of coding and programming languages. We will use <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> and <a href="https://asabuncuoglu13.github.io/karton-games/" target="_blank">Kart-ON Game Interface</a> to code the <a href="https://tr.wikipedia.org/wiki/Flappy_Bird" target="_blank">Flappy Bird</a> game in a unique way. We will develop an AI model (a computer vision system) to code the required components of the game. </p>
-        <p>We already developed some components of the game, so that you can focus on the fun parts. We prepared ten commands that you can use to create the game from scratch. Green blocks show the <strong>events </strong>and blue blocks represent <strong>actions</strong>. </p>
-        <p class="image-container"><img style="width: 624.00px" src="img/c9cf9053b24df309.png"></p>
-        <p>We will complete five levels to complete our game. In the first part, we will start representing these commands using our craft materials. For example, I created some drawings like the following figure, but you can be more creative and create some 3D event and action figures.</p>
-        <p class="image-container"><img style="width: 697.37px" src="img/6dd860f44778e342.jpeg"></p>
-        <p>Come on, physicalize these programming blocks with play dough, LEGO, paper, pencil or other physical materials.</p>
-
-
-    </google-codelab-step>
-
-    <google-codelab-step label="What is Teachable Machine?" duration="0">
-        <p>Teachable Machine is a web application that allows us to quickly use object, speech, and pose recognition models, which are common uses of artificial intelligence. In our daily*lie applications, these technologies become standard tools. </p>
-        <p>You will use Teachable Machine to introduce your own tangible programming commands.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/fa86c21d69d3d4ba.png"></p>
-        <h2 is-upgraded>Let&#39;s Open a New Project</h2>
-        <p>After pressing the <a href="https://teachablemachine.withgoogle.com/train" target="_blank">
-            <paper-button class="colored" raised>Get Started</paper-button>
-        </a> button, you will see three types of projects in the application:
-        </p>
-        <ol type="1" start="1">
-            <li><strong>Image Project:</strong> Object recognition using our images,</li>
-            <li><strong>Audio Project:</strong> Speech recognition using our one-second-long microphone recordings,</li>
-            <li><strong>Pose Project: </strong>The movements will enable the recognition of the flow in the videos.</li>
-        </ol>
-        <p class="image-container"><img style="width: 624.00px" src="img/deab0fca5d4fea15.png"></p>
-        <p>We want the computer to recognize the tangible programming commands you already prepared using a webcam. So, we should select the Image Project.</p>
+        <google-codelab-step label="Coding the Game using Teachable Machine" duration="0">
+            <p>In this tutorial, we will learn the basics of coding and design a simple programming interface for coding a game. We will use <a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> and <a href="https://asabuncuoglu13.github.io/karton-games/"
+                    target="_blank">Kart-ON Game Web App</a> to code the <a href="https://tr.wikipedia.org/wiki/Flappy_Bird" target="_blank">Flappy Bird</a> game in a new way. We will develop an AI model (a computer vision system) to code the required components
+                of the game! </p>
+            <p>We already prepared some required assets of the game, so that you can focus on the fun parts. Below, you can see the ten main commands that you will use to create the game from scratch. Green blocks show the <strong>events </strong>and blue
+                blocks represent <strong>actions</strong>. </p>
+            <p class="image-container"><img style="width: 624.00px" src="img/c9cf9053b24df309.png"></p>
+            <h2 is-upgraded><strong>Create Tangible Representation of Programming Commands</strong></h2>
+            <p>First, let&#39;s start with representing these commands using our craft materials. For example, I created some drawings like the following figure, but you can be more creative and create some 3D action figures.</p>
+            <p class="image-container"><img style="width: 697.37px" src="img/6dd860f44778e342.jpeg"></p>
+            <p>Now, create your own tangible representations of these programming blocks with play dough, LEGO, paper, pencil, or other craft materials.</p>
 
 
-    </google-codelab-step>
+        </google-codelab-step>
 
-    <google-codelab-step label="Introducing the Programming Objects" duration="0">
-        <p>When you start a new project, the screen shows us a basic flow of an AI training system. Artificial intelligence applications currently in widespread use collect a lot of data to make sense of the problem they want to solve. For example, we want to train a system that can distinguish between apples and oranges. To create this system, we must first find many pictures of apples and pears. Thus, by feeding them into the system, we can enable the system to pass to the second stage. </p>
-        <p class="image-container"><img style="width: 624.00px" src="img/79672c94c7e8dcd2.png"></p>
-        <p>Before we move on to the second stage, we open our Webcam to collect image data. First, we introduce the &#34;When Touching Screen&#34; command.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/182b80006ceb0e66.png"></p>
-        <p>If you have chosen which object you will use for this command, you can start recording many different versions of this image from close, distant, and slightly different angles while pressing the Hold To Record button. I want to train my AI module using about 40 photos. For this, you can press and hold the photo from 40 different views until you take it. Or, as you can see in the photo below, we can change the settings for taking photos and automate the shooting process by first pressing the &#34;gear&#34; shaped icon.</p>
-        <p>FPS specifies how many photos will be taken per second, Delay specifies how many seconds the capturing process will start automatically, and Duration specifies how many seconds it will continue capturing. With the settings given on the screen below, we can set up a system that can take approximately 40 photos according to the processing capacity of your computer.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/74fad08553a7540e.png"></p>
-        <p>After pressing &#34;Save Settings&#34; and saving our settings, let&#39;s start shooting with these settings.</p>
-        <p class="image-container"><img style="width: 450.00px" src="img/8e7b17d95f53e8e8.gif"></p>
-
-
-    </google-codelab-step>
-
-    <google-codelab-step label="Programming Cards Classes" duration="0">
-        <p>So, how can our interface detect the programming commands that you introduced to Teachable Machine? We need to develop a standard mapping for this. The system that came to our mind was assigning numbers to each command as the following table shows:</p>
-        <table>
-            <tr>
-                <td colspan="1" rowspan="1"><p>Programming Command</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>Class Number</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>When User Touches the Screen</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>1</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>When the Game Starts</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>2</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>When Passes the Obstacle</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>3</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>When Hits an Obstacle</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>4</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>When the Game Ends</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>5</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>Flap</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>6</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>Change Score</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>7</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>Adjust Speed</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>​​8</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>Place Obstacles</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>9</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="1" rowspan="1"><p>Finish the Game</p>
-                </td>
-                <td colspan="1" rowspan="1"><p>10</p>
-                </td>
-            </tr>
-        </table>
-        <p>We have assigned a number to each programming command that you see in the table. You need to assign these IDs to training sets so that our programming interface can understand which command your designed cards correspond to in its system.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/d3d24ae7a4029cd4.png"></p>
-        <p>As in the figure above, I change the name of my class &#34;When I Touch the Screen&#34; to the corresponding &#34;1&#34; in the table.</p>
+        <google-codelab-step label="What is Teachable Machine?" duration="0">
+            <p>Teachable Machine is a web application that allows us to quickly use object, speech, and pose recognition models, which are common uses of artificial intelligence. In our daily*lie applications, these technologies become standard tools. </p>
+            <p>You will use Teachable Machine to introduce your own tangible programming commands.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/fa86c21d69d3d4ba.png"></p>
+            <h2 is-upgraded>Let&#39;s Open a New Project</h2>
+            <p>After pressing the
+                <a href="https://teachablemachine.withgoogle.com/train" target="_blank">
+                    <paper-button class="colored" raised>Get Started</paper-button>
+                </a> button, you will see three types of projects in the application:</p>
+            <ol type="1" start="1">
+                <li><strong>Image Project:</strong> Object recognition using our images, </li>
+                <li><strong>Audio Project:</strong> Speech recognition using our one-second-long microphone recordings,</li>
+                <li><strong>Pose Project: </strong>The movements will enable the recognition of the flow in the videos.</li>
+            </ol>
+            <p class="image-container"><img style="width: 624.00px" src="img/deab0fca5d4fea15.png"></p>
+            <p>We want the computer to recognize the tangible programming commands you already prepared using a webcam. So, we should select the Image Project.</p>
 
 
-    </google-codelab-step>
+        </google-codelab-step>
 
-    <google-codelab-step label="Training the Model" duration="0">
-        <p>After collecting images for three programming command labels, it&#39;s a good practice to test our model training results before proceeding further. Let&#39;s press the training button to start the model training.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/cace537c7313518c.png"></p>
-        <p>We can test the recognition accuracy of our model in the &#34;Preview&#34; box which opens after the training process is completed. Let&#39;s show each programming object to the camera and evaluate the recognition accuracy in the &#34;Output&#34; field. We can say that the system is recognizing the cards well if the accuracy bars show values ​​higher than 90% most of the time. If our system does not give reliable results, continue collecting more samples from different angles in better lighting conditions.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/f9322d5f406f2eee.png"></p>
-        <p>In our test samples, the model could recognize the programming objects with almost ~90% accuracy . But when it saw a different object, as in the example below, the model was confused. As you will notice, the vision model tries to make its own choices in this three-class world that we have established, since it has no access to information other than the information we provide. But it can&#39;t tell us it&#39;s just another card.</p>
-        <p class="image-container"><img style="width: 249.09px" src="img/f9c881de891b39c9.png"><img style="width: 248.64px" src="img/1331e605594865e.png"></p>
-
-
-    </google-codelab-step>
-
-    <google-codelab-step label="Using the Model in our Game Interface" duration="0">
-        <p>How will we use this trained model in our game? </p>
-        <p>By clicking the &#34;Export Model&#34; button on the top of the preview card, we can get our <em>sharable link</em>. Let&#39;s create the link for our model by clicking the &#34;Upload my model&#34; button in the window that opens as follows.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/970b70d968ef4d01.png"></p>
-        <p>When the link creation process is completed, you can copy the link that appears under &#34;Your Shareable Link&#34;.</p>
-        <p class="image-container"><img style="width: 624.00px" src="img/b5687132de2e83ad.png"></p>
-        <p>Use this link via,</p>
-        <ol type="1" start="1">
-            <li>Paste the link on the <a href="https://asabuncuoglu13.github.io/karton-games/" target="_blank">Kart-ON Game landing page</a>,</li>
-            <li>Then, click the Flappy Bird game card.</li>
-        </ol>
-        <p class="image-container"><img style="width: 624.00px" src="img/d116415f287c1485.png"></p>
+        <google-codelab-step label="Introducing the Programming Objects" duration="0">
+            <p>When you start a new project, the application interface shows a basic flow of an AI training system. Artificial intelligence applications are currently in widespread use. They collect a lot of data to learn the features that are required to
+                understand the problem. </p>
+            <p>For example, we want to train a system that can distinguish between apples and oranges. To create this system, we must first find many pictures of apples and pears. Thus, by feeding them into the system, we can enable the system to pass to
+                the second stage. </p>
+            <p class="image-container"><img style="width: 624.00px" src="img/79672c94c7e8dcd2.png"></p>
+            <p>Before we move on to the second step, we open our Webcam to collect image data. First, we introduce the &#34;When Touching Screen&#34; command.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/182b80006ceb0e66.png"></p>
+            <p>If you have chosen which object you will use for this command, you can start recording many different versions of this image from close, distant, and slightly different angles while pressing the Hold To Record button. I want to train my AI
+                module using about 40 photos. For this, you can press and hold the photo from 40 different views until you take it. Or, as you can see in the photo below, we can change the settings for taking photos and automate the shooting process by
+                first pressing the &#34;gear&#34; shaped icon.</p>
+            <p>FPS specifies how many photos will be taken per second, Delay specifies how many seconds the capturing process will start automatically, and Duration specifies how many seconds it will continue capturing. With the settings given on the screen
+                below, we can set up a system that can take approximately 40 photos based on the processing capacity of your computer.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/74fad08553a7540e.png"></p>
+            <p>After pressing &#34;Save Settings&#34; and saving our settings, let&#39;s record our images using these settings.</p>
+            <p class="image-container"><img style="width: 450.00px" src="img/8e7b17d95f53e8e8.gif"></p>
 
 
-    </google-codelab-step>
+        </google-codelab-step>
 
-    <google-codelab-step label="Save the Project to Google Drive" duration="0">
-        <p>If you want to save the Teachable Machine project and develop your model further, you can save your model to Google Drive by clicking the three-line menu icon next to the &#34;Teachable Machine&#34; heading and selecting the &#34;Save Project to Drive&#34; option.</p>
-        <p class="image-container"><img style="width: 343.00px" src="img/add3466c943e039f.png"></p>
-        <p>After saving the project, you can open the project again at any time by connecting with your Google account.</p>
+        <google-codelab-step label="Programming Cards Classes" duration="0">
+            <p>So, how can our interface detect the programming commands that you introduced to Teachable Machine? We need to develop a standard mapping for this. The system that came to our mind was assigning numbers to each command as the following table
+                shows:
+            </p>
+            <table>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>Programming Command</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>Class Number</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>When User Touches the Screen</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>When the Game Starts</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>2</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>When Passes the Obstacle</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>3</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>When Hits an Obstacle</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>4</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>When the Game Ends</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>5</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>Flap</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>6</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>Change Score</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>7</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>Adjust Speed</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>​​8</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>Place Obstacles</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>9</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="1">
+                        <p>Finish the Game</p>
+                    </td>
+                    <td colspan="1" rowspan="1">
+                        <p>10</p>
+                    </td>
+                </tr>
+            </table>
+            <p>We have assigned a number to each programming command that you see in the table. You need to assign these IDs to training sets so that our programming interface can understand which command your designed cards correspond to in its system.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/d3d24ae7a4029cd4.png"></p>
+            <p>As in the figure above, I change the name of my class &#34;When I Touch the Screen&#34; to the corresponding &#34;1&#34; in the table.</p>
 
 
-    </google-codelab-step>
+        </google-codelab-step>
 
-</google-codelab>
+        <google-codelab-step label="Training the Model" duration="0">
+            <p>After collecting images for three programming command labels, it&#39;s a good practice to test our model training results before proceeding further. Let&#39;s press the training button to start the model training.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/cace537c7313518c.png"></p>
+            <p>We can test the recognition accuracy of our model in the &#34;Preview&#34; box which opens after the training process is completed. Let&#39;s show each programming object to the camera and evaluate the recognition accuracy in the &#34;Output&#34;
+                field. We can say that the system is recognizing the cards well if the accuracy bars show values ​​higher than 90% most of the time. If our system does not give reliable results, continue collecting more samples from different angles in
+                better lighting conditions.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/f9322d5f406f2eee.png"></p>
+            <p>In our test samples, the model could recognize the programming objects with almost ~90% accuracy . But when it saw a different object, as in the example below, the model was confused. As you will notice, the vision model tries to make its
+                own choices in this three-class world that we have established, since it has no access to information other than the information we provide. But it can&#39;t tell us it&#39;s just another card.</p>
+            <p class="image-container"><img style="width: 249.09px" src="img/f9c881de891b39c9.png"><img style="width: 248.64px" src="img/1331e605594865e.png"></p>
 
-<script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
-<script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
-<script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
-<script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
-<script src="//support.google.com/inapp/api.js"></script>
+
+        </google-codelab-step>
+
+        <google-codelab-step label="Using the Model in our Game Interface" duration="0">
+            <p>How will we use this trained model in our game? </p>
+            <p>By clicking the &#34;Export Model&#34; button on the top of the preview card, we can get our <em>sharable link</em>. Let&#39;s create the link for our model by clicking the &#34;Upload my model&#34; button in the window that opens as follows.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/970b70d968ef4d01.png"></p>
+            <p>When the link creation process is completed, you can copy the link that appears under &#34;Your Shareable Link&#34;.</p>
+            <p class="image-container"><img style="width: 624.00px" src="img/b5687132de2e83ad.png"></p>
+            <p>Use this link via,</p>
+            <ol type="1" start="1">
+                <li>Paste the link on the <a href="https://asabuncuoglu13.github.io/karton-games/" target="_blank">Kart-ON Game landing page</a>, </li>
+                <li>Then, click the Flappy Bird game card.</li>
+            </ol>
+            <p class="image-container"><img style="width: 624.00px" src="img/d116415f287c1485.png"></p>
+
+
+        </google-codelab-step>
+
+        <google-codelab-step label="Save the Project to Google Drive" duration="0">
+            <p>If you want to save the Teachable Machine project and develop your model further, you can save your model to Google Drive by clicking the three-line menu icon next to the &#34;Teachable Machine&#34; heading and selecting the &#34;Save Project
+                to Drive&#34; option.</p>
+            <p class="image-container"><img style="width: 343.00px" src="img/add3466c943e039f.png"></p>
+            <p>After saving the project, you can open the project again at any time by connecting with your Google account.</p>
+
+
+        </google-codelab-step>
+
+    </google-codelab>
+
+    <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+    <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+    <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+    <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+    <script src="//support.google.com/inapp/api.js"></script>
 
 </body>
+
 </html>
