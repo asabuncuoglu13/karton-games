@@ -11,7 +11,7 @@ approach to play games to develop algorithmic thinking skills:
 
 Use this starter slide: [Google Slides - Intro Programming](https://docs.google.com/presentation/d/e/2PACX-1vRJZMeVgRwhr5o0sq701NDOYR0IAgvkiZA1G3OtxemZ9sBFiog-NV3pHtKMDX6uldWccowsghHRu2Lf/pub?start=false&loop=false&delayms=3000)
 
-Then follow this Codelab to use our game interface: [Flappy Bird - Teachable Machine Codelab](./tm/codelab/en/index.html)
+Then follow this Codelab to use our game interface: [Flappy Bird - Teachable Machine Codelab](https://asabuncuoglu13.github.io/karton-games/tm/codelab/en/index.html#0)
 
 
 
