@@ -1,5 +1,7 @@
 # Kart-ON Games
 
+[```Read our research paper presented at Fablearn 2022 Conference```](./fablearn_paper.pdf)
+
 **Kart-ON** uses card-based programming blocks to code sketches and animations easily. Kart-ON games uses a similar 
 approach to play games to develop algorithmic thinking skills:
 
